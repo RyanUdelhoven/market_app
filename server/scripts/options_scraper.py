@@ -77,7 +77,7 @@ def parse_ticker_options(dates, base_url, date_labels):
       'puts': []
   }
   for date in dates:
-    dated_url = f'{base_url}?date={date[date_labels['code']]}'
+    dated_url = f'{base_url}?date={date[date_labels["code"]]}'
     html = get_html(dated_url)
     tablesHTML = parse_tables(html)
     callRowsHTML = parse_rows(tablesHTML[0])
