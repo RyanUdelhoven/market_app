@@ -11,9 +11,7 @@ def hello_world():
 
 @app.route('/options')
 def get_options_data():
-  # Calls a script to generate data
   data = options_data()
-  # Sends data back
   return jsonify(data)
 
 
