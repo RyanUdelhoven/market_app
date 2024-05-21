@@ -1,35 +1,25 @@
-import OptionContract from '@/components/OptionsContract/OptionsContract';
+import './globals.css'
+import NavBar from '@/components/NavBar';
 
 export default function Home() {
 
-  const testData = {
-    contract: {
-      expirationDate: "2024-06-21",
-      contractID: "ABC123",
-      strike: 150,
-      lastTradeDTG: "2024-05-19T15:00:00Z",
-      bid: 3.50,
-      ask: 3.70,
-      lastPrice: 3.60,
-      openInterest: 1200,
-      impliedVolatility: 0.25,
-    },
-    previousClose: {
-      expirationDate: "2024-06-21",
-      contractID: "ABC123",
-      strike: 150,
-      lastTradeDTG: "2024-05-18T15:00:00Z",
-      bid: 3.45,
-      ask: 3.75,
-      lastPrice: 3.55,
-      openInterest: 1150,
-      impliedVolatility: 0.26,
-    },
+  const initialStock = {
+    ticker: 'AAPL',
+    currentPrice: 150.00,
+    lastClose: 148.50,
   };
+
+  const navLinks = [
+    { href: '/', label: 'Home', active: false },
+    { href: '/stocks', label: 'Stocks', active: false },
+    { href: '/options', label: 'Options', active: false },
+    { href: '/about', label: 'About', active: false },
+  ];
 
   return (
     <main>
-      <OptionContract contract={testData.contract} previousClose={testData.previousClose} />
+      <NavBar logoSrc="/logo.png" initialStock={initialStock} navLinks={navLinks} />
+      {/* <Component {...pageProps} /> */}
     </main>
   );
 }

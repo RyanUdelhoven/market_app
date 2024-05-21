@@ -1,0 +1,36 @@
+/* components/TickerDisplay.module.css */
+
+.tickerDisplay {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.ticker {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.price {
+  margin-right: 0.5rem;
+}
+
+.price-success {
+  color: var(--color-success);
+}
+
+.price-danger {
+  color: var(--color-danger);
+}
+
+.change {
+  font-size: var(--font-size-small);
+}
+
+.change-success {
+  color: var(--color-success);
+}
+
+.change-danger {
+  color: var(--color-danger);
+}

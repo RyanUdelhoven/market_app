@@ -1,0 +1,15 @@
+/* components/NavLink.module.css */
+
+.navLink {
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+.navLink.active {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+}

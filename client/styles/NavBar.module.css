@@ -1,0 +1,30 @@
+/* components/NavBar.module.css */
+
+.navbar {
+  background-color: var(--color-light);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
+}
